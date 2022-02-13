@@ -6,3 +6,4 @@ Actually a very simple calculator.
 - All styling must be done in CSS
 - All added components must be unit tested
 - Must have two routes - a main page and an about page
+
