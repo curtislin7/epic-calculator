@@ -7,13 +7,34 @@ function App() {
 
   return (
     <div className="App">
-      <CalculatorRow>
-        <input className={"calculation-input"} value={calculation} readOnly/>
-      </CalculatorRow>
-      <CalculatorRow>
-        <CalculatorButton text={'9'} setCalculation={setCalculation}/>
-        <CalculatorButton isFunctionButtonText={true} text={'='}/>
-      </CalculatorRow>
+      <div className={"calculator-container"}>
+        <div className={"calculator-title"}>HARD CORE CALCULATOR.</div>
+        <div className={"calculation-container-display"}>{calculation}</div>
+        <CalculatorRow>
+          <CalculatorButton text={'7'} setCalculation={setCalculation}/>
+          <CalculatorButton text={'8'} setCalculation={setCalculation}/>
+          <CalculatorButton text={'9'} setCalculation={setCalculation}/>
+          <CalculatorButton isFunctionButtonText={true} text={'/'}/>
+        </CalculatorRow>
+        <CalculatorRow>
+          <CalculatorButton text={'4'} setCalculation={setCalculation}/>
+          <CalculatorButton text={'5'} setCalculation={setCalculation}/>
+          <CalculatorButton text={'6'} setCalculation={setCalculation}/>
+          <CalculatorButton isFunctionButtonText={true} text={'x'}/>
+        </CalculatorRow>
+        <CalculatorRow>
+          <CalculatorButton text={'1'} setCalculation={setCalculation}/>
+          <CalculatorButton text={'2'} setCalculation={setCalculation}/>
+          <CalculatorButton text={'3'} setCalculation={setCalculation}/>
+          <CalculatorButton isFunctionButtonText={true} text={'-'}/>
+        </CalculatorRow>
+        <CalculatorRow>
+          <div className={'placeholder'}/>
+          <CalculatorButton text={'0'} setCalculation={setCalculation}/>
+          <div className={'placeholder'}/>
+          <CalculatorButton isFunctionButtonText={true} text={'='}/>
+        </CalculatorRow>
+      </div>
     </div>
   );
 }
