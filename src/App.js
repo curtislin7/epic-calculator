@@ -2,18 +2,16 @@ import './App.css';
 import React from 'react';
 import { CalculatorRow, CalculatorButton } from './components';
 
-
 function App() {
-
-  const [currentNum, setCurrentNum] = React.useState(0)
+  const [calculation, setCalculation] = React.useState(0)
 
   return (
     <div className="App">
       <CalculatorRow>
-        {currentNum}
+        <input className={"calculation-input"} value={calculation} readOnly/>
       </CalculatorRow>
       <CalculatorRow>
-        <CalculatorButton text={'9'} setCurrentNum={setCurrentNum}/>
+        <CalculatorButton text={'9'} setCalculation={setCalculation}/>
         <CalculatorButton isFunctionButtonText={true} text={'='}/>
       </CalculatorRow>
     </div>
