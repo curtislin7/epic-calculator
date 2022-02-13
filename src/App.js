@@ -1,14 +1,20 @@
 import './App.css';
-import { CalculatorRow } from './components/CalculatorRow';
+import React from 'react';
+import { CalculatorRow, CalculatorButton } from './components';
 
 
 function App() {
+
+  const [currentNum, setCurrentNum] = React.useState(0)
+
   return (
     <div className="App">
       <CalculatorRow>
-        <button className="button" onClick={() => {alert('You clicked a button.')}}>
-          <div className="button-text">=</div>
-        </button>
+        {currentNum}
+      </CalculatorRow>
+      <CalculatorRow>
+        <CalculatorButton text={'9'} setCurrentNum={setCurrentNum}/>
+        <CalculatorButton isFunctionButtonText={true} text={'='}/>
       </CalculatorRow>
     </div>
   );

@@ -1,0 +1,27 @@
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button-text{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.function-button-text{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  color: red;
+}
