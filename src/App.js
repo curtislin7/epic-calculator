@@ -7,7 +7,7 @@ function App() {
   console.log(calculation)
   const handleButtonClick = (text) => {
     let newText = calculation + text
-    if (['-', '+', '/', 'x'].includes(text)) {
+    if (['-', '+', '/', '*'].includes(text)) {
       newText = calculation + ' ' + text + ' '
     }
     setCalculation(newText.replace(/^0+/, ''))
@@ -35,7 +35,7 @@ function App() {
           <CalculatorButton text={'4'} calculation={calculation} handleButtonClick={handleButtonClick}/>
           <CalculatorButton text={'5'} calculation={calculation} handleButtonClick={handleButtonClick}/>
           <CalculatorButton text={'6'} calculation={calculation} handleButtonClick={handleButtonClick}/>
-          <CalculatorButton isFunctionButtonText={true} text={'x'} calculation={calculation} handleButtonClick={handleButtonClick}/>
+          <CalculatorButton isFunctionButtonText={true} text={'*'} calculation={calculation} handleButtonClick={handleButtonClick}/>
           <div className={'placeholder'}/>
         </CalculatorRow>
         <CalculatorRow>
