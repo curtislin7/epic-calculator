@@ -4,7 +4,6 @@ import { CalculatorRow, CalculatorButton } from './components';
 
 function App() {
   const [calculation, setCalculation] = React.useState(0)
-  console.log(calculation)
   const handleButtonClick = (text) => {
     let newText = calculation + text
     if (['-', '+', '/', '*'].includes(text)) {
@@ -12,6 +11,7 @@ function App() {
     }
     setCalculation(newText.replace(/^0+/, ''))
   }
+  
   return (
     <div className="App">
       <div className={"calculator-container"}>
