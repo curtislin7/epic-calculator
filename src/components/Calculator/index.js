@@ -3,16 +3,16 @@ import React from 'react';
 import { CalculatorButton, CalculatorRow } from ".."
 
 export const Calculator =  () => {
-    const [calculation, setCalculation] = React.useState(0)
-    const handleButtonClick = (text) => {
-      let newText = calculation + text
-      if (['-', '+', '/', '*'].includes(text)) {
-        newText = calculation + ' ' + text + ' '
-      }
-      setCalculation(newText.replace(/^0+/, ''))
+  const [calculation, setCalculation] = React.useState(0)
+  const handleButtonClick = (text) => {
+    let newText = calculation + text
+    if (['-', '+', '/', '*'].includes(text)) {
+      newText = calculation + ' ' + text + ' '
     }
+    setCalculation(newText.replace(/^0+/, ''))
+  }
 
-    return (
+  return (
     <div className={"calculator-container"}>
       <div className={"calculator-title"}>HARD CORE CALCULATOR.</div>
       <div className={"calculation-container-display"}>{calculation}</div>

@@ -8,5 +8,5 @@ Actually a very simple calculator.
 - Must have two routes - a main page and an about page
 
 ## TODO
-[] Add routing with at least one more route
+[] test routing
 [] Add a node express backend
