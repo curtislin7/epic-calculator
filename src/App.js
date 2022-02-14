@@ -1,5 +1,5 @@
 import './App.css';
-import { Calculator } from './components'
+import { AboutPage, Calculator } from './components'
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,7 +23,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/about" element={<div>This app should definitely not be used in any capacity.</div>}/>
+          <Route path="/about" element={<AboutPage/>}/>
           <Route path="/" element={<Calculator/>}/>
         </Routes>
       </div>
