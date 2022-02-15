@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { screen } from '@testing-library/react';
 import { AboutPage } from './index.js';
 import { renderWithRouter } from 'testUtil.js'
 
